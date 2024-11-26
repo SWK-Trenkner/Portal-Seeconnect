@@ -1,0 +1,27 @@
+.contactRequestMessage.q-textarea textarea {
+  min-height: 200px !important;
+}
+.unit-label {
+  padding-top: 12px;
+  width: 50px;
+}
+.counter-label {
+  color: #000;
+  font-size: 0.75rem;
+  padding-left: 12px;
+}
+.last-value-label {
+  letter-spacing: 0;
+}
+.section-contact-form {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.error-avatar {
+  font-size: 40px;
+}
+.previous-value[data-v-4dee54ac] {
+  border: 1px solid grey !important;
+}

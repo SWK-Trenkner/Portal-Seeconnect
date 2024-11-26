@@ -1,0 +1,56 @@
+.contactRequestMessage.q-textarea textarea {
+  min-height: 200px !important;
+}
+.change-deduction-dialog .ellipsis-wrapper {
+  display: grid;
+  grid-template-columns: 100% 1fr;
+}
+.change-deduction-dialog .config-info-label b {
+  white-space: nowrap;
+}
+.wlk-widget-data-wrapper.wlk-deduction
+  .q-card.expand-deduction
+  .q-expansion-item
+  .q-expansion-item__container
+  > .q-item.q-link {
+  background-color: #f5f5f5;
+  margin-bottom: 2px;
+}
+.wlk-widget-data-wrapper.wlk-deduction
+  .q-card.expand-deduction
+  .q-expansion-item
+  .q-expansion-item__container
+  .q-list
+  .q-item.q-link {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 0;
+}
+.wlk-widget-data-wrapper.wlk-deduction
+  .q-card.expand-deduction
+  .q-expansion-item
+  .q-expansion-item__content
+  .label-caption {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.wlk-widget-data-wrapper.wlk-deduction
+  .q-card.expand-deduction
+  .q-expansion-item--expanded
+  .q-list
+  .q-expansion-item.item-label-2.q-expansion-item--expanded
+  .q-expansion-item__container
+  .q-item.q-link {
+  background-color: #f5f5f5 !important;
+}
+.deduction-overview .sticky-selection {
+  position: sticky;
+  top: 16px;
+}
+.deduction-overview .ellipsis-wrapper {
+  align-self: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: start;
+}

@@ -1,0 +1,18 @@
+.triangle:before {
+  border-color: #fff transparent transparent;
+  border-style: solid;
+  border-width: 12px 10px 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 90px;
+  -webkit-transform: rotate(1turn);
+  width: 0;
+}
+.tooltip-actions {
+  background-color: var(--q-primary);
+}
+.tooltip-actions .q-btn {
+  flex: none !important;
+  min-width: 80px !important;
+}

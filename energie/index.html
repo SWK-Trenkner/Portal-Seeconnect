@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Stadtwerke Konstanz</title>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+
+
+  <script>function calculateVh() {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', vh + 'px');
+    }
+
+    // Initial calculation
+    calculateVh();
+
+    // Re-calculate on resize
+    window.addEventListener('resize', calculateVh);
+
+    // Re-calculate on device orientation change
+    window.addEventListener('orientationchange', calculateVh);</script>
+  <style>
+    body {
+      height: calc(100 * var(--vh));
+    }
+
+    .ssp-content {
+      /* height: 100%; */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      /* height: calc(100 * var(--vh));
+max-height: calc(100 * var(--vh)); */
+    }
+
+    .ssp-content #q-app {
+      height: 100%;
+    }
+
+    .ssp-content .main-content {
+      flex: 1;
+    }
+
+    #topnav {
+      flex-grow: 0;
+    }
+
+    [id^=single-spa-application],
+    .single-spa-container {
+      height: 100%;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .loading-txt {
+      line-height: 1.5;
+    }
+
+    #loadingMessage {
+      font-size: 18pt !important;
+      -webkit-font-smoothing: antialiased;
+      /* font-family: "Mulish Regular", sans-serif; */
+      color: #707071;
+    }
+
+    @media screen and (max-width: 599.99px) {
+      #loadingMessage {
+        font-size: 14pt !important;
+      }
+    }
+
+    .loading-spinner {
+      animation: loading-spinner 1.5s linear infinite;
+      width: 200px;
+      height: 200px;
+    }
+
+    svg .plug,
+    svg .socket {
+      fill: #E2001A;
+    }
+
+    svg .loop-normal {
+      fill: none;
+      stroke: #E2001A;
+      stroke-width: 10;
+    }
+
+    @keyframes loading-spinner {
+      from {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .preload-container {
+      width: 100%;
+      /* transform: translate(0, calc(calc(calc(50 * var(--vh)) - 50%) - 50px)); */
+      /* position: relative; */
+      font-family: arial, verdana, sans-serif;
+      color: #E2001A;
+      text-align: center;
+      position: absolute;
+      bottom: calc(50 * var(--vh) - 50px - 103.5px);
+    }
+
+    .preload-content {
+      max-width: 400px;
+      padding: 1.5rem 1.5rem 2rem 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-wrapper {
+      background-image: url('portal-seeconnect/resources/img/logo.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 200px;
+      height: 60px;
+      margin: 0 auto;
+    }
+
+    .loop-wrapper {
+      max-height: 200px;
+      margin: 2rem auto 3rem auto;
+    }
+  </style>
+  <style lang="css"></style>
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/909.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/94.css">
+
+  
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_navigation/css/601.a5b209d2.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_navigation/css/404.945c40ef.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/906.949fdb19.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_navigation/css/880.55ac0559.css">
+  <link href="/portal-seeconnect/resources/css/style.css" rel="stylesheet">
+  <link href="/portal-seeconnect/resources/css/icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/689.0f0c29aa.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/829.a9d866cd.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/707.29f94fd6.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/191.c04ff630.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/9300.36c426b0.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/9573.3034ed81.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/9752.da14a2fa.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/3874.a364bb95.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/8287.fb6f77ba.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/9425.25ee87ca.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/9062.e5e60ea0.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/3261.4a1ffb3d.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/9594.9a2f9e71.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/5334.3083929e.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_energy/css/5207.4a1ffb3d.css">
+</head>
+
+<body class="desktop no-touch body--light"
+  style="--q-page-min-height: 707px; --topnav-height: 132px; --megamenu-height: 75px; --footer-height: 50px; --q-layout-height: 1659px;">
+  <div id="appContainer" style="display: flex;" class="ssp-content">
+    <nav id="topnav">
+      <div id="single-spa-application:mfe_nav">
+        <div class="single-spa-container" data-v-app="">
+          <div class="navigation-context" name="mfe_nav">
+            <div class="q-layout-container overflow-hidden header-layout energy-context energy-context-header"><!---->
+              <div class="absolute-full">
+                <div class="scroll">
+                  <div class="q-layout q-layout--containerized" tabindex="-1"><!----><!---->
+                    <div class="top-nav q-header ssp-header">
+                      <div class="wlk-content-container row q-pa-md justify-between"><!---->
+                        <div class="company-logo relative-position column cursor-pointer"><img class="logo"
+                            src="portal-seeconnect/resources/img/logo.svg"></div>
+                        <div class="userinfo-menu-wrapper flex content-center watchSwitch q-ml-md" test-id="user-menu"
+                          style="cursor: pointer;">
+                          <div class="userData userinfo-menu flex column justify-center q-px-md text-right">
+                            <div class="text-bold userinfo-name">Michel Trenkner</div>
+                            <div class="text-light userinfo-description">Sie sind angemeldet</div>
+                          </div>
+                          <div class="q-avatar bg-primary userinfo-avatar">
+                            <div class="q-avatar__content row flex-center overflow-hidden">
+                              <div class="text-white initials">MT</div>
+                            </div>
+                          </div><!---->
+                        </div>
+                      </div>
+                      <div data-v-71e9f440="" class="full-width row navigation-bar">
+                        <div data-v-71e9f440="" class="row constraint-max-width navigation-items no-wrap"
+                          style="width: 100%;">
+                          <div data-v-71e9f440=""
+                            class="q-tabs row no-wrap items-center q-tabs--not-scrollable q-tabs--horizontal q-tabs__arrows--inside q-tabs--mobile-without-arrows home-tab"
+                            role="tablist"><!---->
+                            <div
+                              class="q-tabs__content scroll--mobile row no-wrap items-center self-stretch hide-scrollbar relative-position q-tabs__content--align-justify">
+                              <a data-v-71e9f440="" href="/portal-seeconnect/"
+                                style="text-decoration: none !important; color: currentcolor;">
+                                <div data-v-71e9f440=""
+                                  class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white q-px-none xxxxx"
+                                  tabindex="0" role="tab" aria-selected="false" style="height: 52px;">
+                                  <div class="q-focus-helper" tabindex="-1"></div>
+                                  <div
+                                    class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                    <i class="q-icon w-icon-home q-tab__icon" aria-hidden="true" role="presentation">
+                                    </i>
+                                  </div>
+                                  <div class="q-tab__indicator absolute-bottom"></div>
+                                </div>
+                              </a>
+                            </div><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--left absolute q-tab__icon"
+                              aria-hidden="true" role="presentation">chevron_left</i><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--right absolute q-tab__icon q-tabs__arrow--faded"
+                              aria-hidden="true" role="presentation">chevron_right</i>
+                          </div>
+                          <div data-v-71e9f440=""
+                            class="q-tabs row no-wrap items-center q-tabs--not-scrollable q-tabs--horizontal q-tabs__arrows--inside q-tabs--mobile-without-arrows col-grow"
+                            role="tablist"><!---->
+                            <div
+                              class="q-tabs__content scroll--mobile row no-wrap items-center self-stretch hide-scrollbar relative-position q-tabs__content--align-left">
+                              
+                              <div data-v-71e9f440=""><a data-v-71e9f440="" href="/portal-seeconnect/seeconnect/"
+                                style="text-decoration: none !important; color: currentcolor;">
+                                <div data-v-71e9f440=""
+                                  class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                  tabindex="-1" role="tab" aria-selected="false" style="height: 52px;">
+                                  <div class="q-focus-helper" tabindex="-1"></div>
+                                  <div
+                                    class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                    <div class="q-tab__label">Seeconnectverträge</div>
+                                  </div>
+                                  <div class="q-tab__indicator absolute-bottom"></div>
+                                </div>
+                              </a></div>
+                              
+                              <div data-v-71e9f440=""><a data-v-71e9f440="" href="/portal-seeconnect/energie"
+                                  style="text-decoration: none !important; color: currentcolor;">
+                                  <div data-v-71e9f440=""
+                                    class="q-tab relative-position self-stretch flex flex-center text-center q-tab--active q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                    tabindex="0" role="tab" aria-selected="true" style="height: 52px;">
+                                    <div class="q-focus-helper" tabindex="-1"></div>
+                                    <div
+                                      class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                      <div class="q-tab__label">Energieverträge</div>
+                                    </div>
+                                    <div class="q-tab__indicator absolute-bottom"></div>
+                                  </div>
+                                </a></div>
+                                
+
+
+
+                              <div data-v-71e9f440=""><a data-v-71e9f440=""
+                                  style="text-decoration: none !important; color: currentcolor;">
+                                  <div data-v-71e9f440=""
+                                    class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                    tabindex="-1" role="tab" aria-selected="false" style="height: 52px;">
+                                    <div class="q-focus-helper" tabindex="-1"></div>
+                                    <div
+                                      class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                      <div class="q-tab__label">Elektromobilität</div>
+                                    </div>
+                                    <div class="q-tab__indicator absolute-bottom"></div>
+                                  </div>
+                                </a></div>
+
+
+                                
+                                <div data-v-71e9f440="" class="row fit justify-end"><a data-v-71e9f440="" href="/portal-seeconnect/KNLogin/index.html"
+                                  style="text-decoration: none !important; color: currentcolor;">
+                                  <div data-v-71e9f440=""
+                                    class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                    tabindex="0" role="tab" aria-selected="false" style="height: 52px;">
+                                    <div class="q-focus-helper" tabindex="-1"></div>
+                                    <div
+                                      class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                      <div class="q-tab__label">Mein KonstanzLogin Profil</div>
+                                    </div>
+                                    <div class="q-tab__indicator absolute-bottom"></div>
+                                  </div>
+                                </a></div>
+                            </div><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--left absolute q-tab__icon"
+                              aria-hidden="true" role="presentation">chevron_left</i><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--right absolute q-tab__icon q-tabs__arrow--faded"
+                              aria-hidden="true" role="presentation">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="mobileMenuSpace" class="full-width"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-content dimmable">
+      <div id="single-spa-application:mfe_energy">
+        <div class="single-spa-container" data-v-app="">
+          <div id="q-app" class="energy-context"><!---->
+            <div class="q-layout q-layout--standard base-layout main-layout energy-layout" tabindex="-1"
+              style="min-height: 964px;"><!----><!----><!----><!----><!---->
+              <div class="row full-width">
+                <div id="megaMenuBody" class="column full-width customer-account-selector">
+                  <div
+                    class="q-expansion-item q-item-type q-expansion-item--collapsed q-expansion-item--standard account-selector-item mega-menu-item column bg-white">
+                    <div class="q-expansion-item__container relative-position">
+                      <div class="q-item q-item-type row no-wrap q-pa-none" role="listitem">
+                        <div class="row justify-end sections-header mega-menu-header constraint-max-width">
+                          <div
+                            class="q-item__section column q-item__section--main justify-center col-grow justify-start items-start content-start">
+                            <button
+                              class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable menu-section-header-btn"
+                              tabindex="0" type="button"><span class="q-focus-helper"></span><span
+                                class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                  class="q-pr-md text-grey-8" style="font-size: 16px;">Kundenkonto &amp;
+                                  Service</span><i class="q-icon notranslate material-icons" aria-hidden="true"
+                                  role="img">expand_more</i></span></button>
+                          </div>
+                          <div data-v-2085a188="" test-id="changeCustomerAccount" test-id-current-selection="558624"
+                            class="row mega-menu-ca-account-selector cursor-pointer">
+                            <div data-v-2085a188=""
+                              class="q-item__section column q-item__section--side justify-center q-pr-none row"
+                              style="cursor: pointer;">
+                              <div data-v-2085a188="" class="q-item__label text-no-wrap text-grey-8 q-pr-md q-pl-sm"
+                                style="font-size: 16px;">Michel Trenkner</div>
+                            </div>
+                            <div data-v-2085a188="" class="q-item__section column q-item__section--side justify-center">
+                              <div data-v-2085a188="" class="row q-gutter-x-sm">
+                                <div data-v-2085a188="" class="column justify-center">
+                                  <div data-v-2085a188="" class="q-avatar"
+                                    style="font-size: 22px; background: rgb(219, 67, 0); color: rgb(255, 255, 255);">
+                                    <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                        class="q-icon w-icon-energy-electricity" aria-hidden="true" role="presentation">
+                                      </i></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div data-v-2085a188=""
+                              class="q-item__section column q-item__section--side justify-center q-pr-none"><i
+                                data-v-2085a188="" class="q-icon notranslate material-icons expand-icon q-mr-none"
+                                aria-hidden="true" role="presentation">expand_more</i></div><!----><!---->
+                          </div>
+                        </div>
+                        <div
+                          class="q-item__section column q-item__section--side justify-center q-focusable relative-position cursor-pointer hidden"
+                          tabindex="0" role="button" aria-expanded="false"
+                          aria-controls="f_1f8a81e6-9a09-4870-a8fa-5e96553286e7" aria-label="Erweitern">
+                          <div class="q-expansion-item__toggle-focus q-icon q-focus-helper q-focus-helper--rounded"
+                            tabindex="-1"></div><i
+                            class="q-icon notranslate material-icons q-expansion-item__toggle-icon" aria-hidden="true"
+                            role="presentation">keyboard_arrow_down</i>
+                        </div>
+                      </div>
+                      <div class="q-expansion-item__content relative-position"
+                        id="f_1f8a81e6-9a09-4870-a8fa-5e96553286e7" style="display: none;">
+                        <div class="bg-white q-pb-md mega-menu-content card">
+                          <div class="constraint-max-width">
+                            <hr class="q-separator q-separator--horizontal" aria-orientation="horizontal">
+                            <div class="q-item q-item-type row no-wrap q-py-lg q-px-md" role="listitem">
+                              <div
+                                class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                <i class="q-icon text-primary w-icon-cnxt_energy" aria-hidden="true" role="presentation"
+                                  style="font-size: 28px;"> </i>
+                              </div>
+                              <div
+                                class="q-item__section column q-item__section--main justify-center text-primary content-header">
+                                Meine Energieverträge</div>
+                            </div>
+                            <hr class="q-separator q-separator--horizontal" aria-orientation="horizontal">
+                            <div class="row full-width">
+                              <div class="col-grow content-menu-navigation q-mr-lg">
+                                <div class="row"><!---->
+                                  <div class="col col-shrink nav-col q-mr-lg" test-id="top-level-nav-Kundenkonto">
+                                    <div class="q-item q-item-type row no-wrap text-bold" role="listitem">Kundenkonto
+                                    </div>
+                                    <div class="q-list content-menu" role="list" test-id="content-menu-Kundenkonto"><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/kundenkonto?t=zahlweg">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Mein Zahlweg</div>
+                                        </div>
+                                      </a><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/kundenkonto?t=rechnungsadresse">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Meine Rechnungsadresse
+                                          </div>
+                                        </div>
+                                      </a></div>
+                                  </div>
+                                  <div class="col col-shrink nav-col q-mr-lg" test-id="top-level-nav-Service">
+                                    <div class="q-item q-item-type row no-wrap text-bold" role="listitem">Service</div>
+                                    <div class="q-list content-menu grid" role="list" test-id="content-menu-Service"
+                                      style="grid-template-rows: repeat(4, 1fr);"><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/mailbox">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Mein Postfach</div>
+                                        </div>
+                                      </a><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/meter-reading">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Mein Zählerstand</div>
+                                        </div>
+                                      </a><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/deduction">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Meine Abschläge</div>
+                                        </div>
+                                      </a><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/consumption">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Mein Verbrauch</div>
+                                        </div>
+                                      </a><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/account-statement">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Mein Kontoauszug</div>
+                                        </div>
+                                      </a><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/proforma-invoice">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Meine Proformarechnung
+                                          </div>
+                                        </div>
+                                      </a><a
+                                        class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-manual-focusable navigation-route-item q-pr-none q-py-none"
+                                        role="listitem" tabindex="0" href="/portal-seeconnect/energie/move">
+                                        <div class="q-focus-helper" tabindex="-1"></div>
+                                        <div class="q-item__section column q-item__section--main justify-center">
+                                          <div class="q-item__label" style="white-space: nowrap;">Umzug/Auszug melden
+                                          </div>
+                                        </div>
+                                      </a></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-auto">
+                                <div class="q-list" role="list">
+                                  <div
+                                    class="q-item q-item-type row no-wrap column q-px-none q-pt-none content-menu-contact"
+                                    role="listitem">
+                                    <div class="q-item q-item-type row no-wrap text-bold" role="listitem">Können wir Sie
+                                      unterstützen?</div>
+                                    <div class="q-item q-item-type row no-wrap q-py-none" role="listitem">
+                                      <div class="q-item__section column q-item__section--main justify-center">
+                                        <div class="q-item__label"><a class=""
+                                            href="mailto:info@stadtwerke-konstanz.de">E-Mail:
+                                            info@stadtwerke-konstanz.de</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="q-item q-item-type row no-wrap q-py-none" role="listitem">
+                                      <div class="q-item__section column q-item__section--main justify-center">
+                                        <div class="q-item__label"><a class="" href="tel:07531 803-2000">Telefon: 07531
+                                            803-2000</a></div>
+                                      </div>
+                                    </div><!---->
+                                    <div class="q-item q-item-type row no-wrap q-py-none" role="listitem">
+                                      <div class="q-item__section column q-item__section--main justify-center">
+                                        <div class="q-item__label"><!----></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-white" style="min-height: 33px;">
+                    <div class="constraint-max-width">
+                      <hr class="q-separator q-separator--horizontal" aria-orientation="horizontal">
+                    </div>
+                    <div class="q-item q-item-type row no-wrap constraint-max-width breadcrumbs-item q-py-none"
+                      role="listitem">
+                      <div class="q-breadcrumbs q-px-md">
+                        <div class="flex items-center justify-start q-gutter-sm">
+                          <div class="flex items-center text-primary"><a
+                              class="q-breadcrumbs__el q-link flex inline items-center relative-position q-link--focusable q-router-link--active"
+                              href="/portal-seeconnect/energie/" test-id="bread-crumbs">Energieverträge</a></div>
+                          <div class="q-breadcrumbs__separator">/</div>
+                          <div class="flex items-center q-breadcrumbs--last"><a
+                              class="q-breadcrumbs__el q-link flex inline items-center relative-position q-link--focusable q-router-link--exact-active q-router-link--active"
+                              href="/portal-seeconnect/energie/kundenkonto" test-id="bread-crumbs">Kundenkonto</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="q-page-container energy-page-container" style="padding-bottom: 50px;">
+                <div class="dimmed-object">
+                  <main class="q-page column page-customer-account page-full-width q-pa-none"
+                    style="min-height: var(--q-page-min-height); padding: 16px;">
+                    <div class="full-width" style="position: relative;"><!---->
+                      <div class="my-account q-py-lg" test-id="my-accountId">
+                        <div class="constraint-max-width">
+                          <div class="row row-title">
+                            <h3 class="page-title q-mt-none q-mb-md">Mein Kundenkonto</h3>
+                          </div>
+                          <div class="row q-col-gutter-md q-my-sm wlk-grid-gutter account-teaser-wrapper"
+                            test-id="my-account-component">
+                            <div class="col-4 col-md-4 col-sm-6 col-xs-6 col-teaser">
+                              <div class="service-teaser relative-position wlk-service-teaser"><!----><a
+                                  href="/portal-seeconnect/energie/mailbox" class="wlk-link-service-teaser" title="Mein Postfach">
+                                  <div class="wlk-card wlk-service-teaser hover-overlay slide-up relative-position">
+                                    <div class="card-front">
+                                      <div class="card-image-wrapper">
+                                        <div class="card-image-container img-meter-reading"><i
+                                            class="q-icon text-white w-icon-mailbox" aria-hidden="true"
+                                            role="presentation" style="font-size: 32px;"> </i></div>
+                                      </div>
+                                      <div class="card-content"></div>
+                                      <div class="overlay-wrapper absolute-full fit">
+                                        <div class="overlay up-show-heading absolute-full fit">
+                                          <div class="overlay-content">
+                                            <div class="content-top">
+                                              <h4 class="q-pr-sm">Mein Postfach</h4>
+                                            </div>
+                                            <p>Hier können Sie Ihre Dokumente einsehen.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a></div>
+                            </div>
+                            <div class="col-4 col-md-4 col-sm-6 col-xs-6 col-teaser">
+                              <div class="service-teaser relative-position wlk-service-teaser"><!----><a
+                                  href="/portal-seeconnect/energie/meter-reading" class="wlk-link-service-teaser"
+                                  title="Mein Zählerstand">
+                                  <div class="wlk-card wlk-service-teaser hover-overlay slide-up relative-position">
+                                    <div class="card-front">
+                                      <div class="card-image-wrapper">
+                                        <div class="card-image-container img-meter-reading"><i
+                                            class="q-icon text-white w-icon-meter" aria-hidden="true"
+                                            role="presentation" style="font-size: 32px;"> </i></div>
+                                      </div>
+                                      <div class="card-content"></div>
+                                      <div class="overlay-wrapper absolute-full fit">
+                                        <div class="overlay up-show-heading absolute-full fit">
+                                          <div class="overlay-content">
+                                            <div class="content-top">
+                                              <h4 class="q-pr-sm">Mein Zählerstand</h4>
+                                            </div>
+                                            <p>Hier können Sie uns Ihren aktuellen Zählerstand melden.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a></div>
+                            </div>
+                            <div class="col-4 col-md-4 col-sm-6 col-xs-6 col-teaser">
+                              <div class="service-teaser relative-position wlk-service-teaser"><!----><a
+                                  href="/portal-seeconnect/energie/consumption" class="wlk-link-service-teaser" title="Mein Verbrauch">
+                                  <div class="wlk-card wlk-service-teaser hover-overlay slide-up relative-position">
+                                    <div class="card-front">
+                                      <div class="card-image-wrapper">
+                                        <div class="card-image-container img-meter-reading"><i
+                                            class="q-icon text-white w-icon-consumption" aria-hidden="true"
+                                            role="presentation" style="font-size: 32px;"> </i></div>
+                                      </div>
+                                      <div class="card-content"></div>
+                                      <div class="overlay-wrapper absolute-full fit">
+                                        <div class="overlay up-show-heading absolute-full fit">
+                                          <div class="overlay-content">
+                                            <div class="content-top">
+                                              <h4 class="q-pr-sm">Mein Verbrauch</h4>
+                                            </div>
+                                            <p>Hier können Sie Ihren Verbrauch vergleichen.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="account-data-wrapper bg-grey-2" test-id="my-account-edit">
+                        <div class="constraint-max-width account-data-content">
+                          <div class="full-width q-pt-md q-pb-md">
+                            <div class="row q-col-gutter-md wlk-grid-gutter customer-account-data-wrapper"
+                              data-name="customer-account-data" test-id="edit-area-component">
+                              <div class="col-6 col-md-6 col-xs-12" data-name="personal-data-card">
+                                <div class="q-card q-card--flat no-shadow wlk-card-info full-height column">
+                                  <div>
+                                    <div class="q-item q-item-type row no-wrap q-mt-sm" role="listitem">
+                                      <div class="q-item__section column q-item__section--main justify-center">
+                                        <div class="q-item__label text-h5 title" style="margin: 0px;">Persönliche Daten
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                        <div class="q-avatar bg-primary lg-avatar avatar-title"
+                                          style="font-size: 3.5rem;">
+                                          <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                              class="q-icon text-white w-icon-personal-information icon-title"
+                                              aria-hidden="true" role="presentation" style="font-size: 32px;"> </i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="q-card__section q-card__section--vert column full-width card-content"
+                                    style="flex: 1 1 0%;">
+                                    <div class="row">
+                                      <div class="col-12 column">
+                                        <div
+                                          class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                          role="listitem"
+                                          style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                          <div
+                                            class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                            <div class="q-item__label text-primary ellipsis" title="Name">Name <!---->
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                            style="padding: 0px;">
+                                            <div class="q-item__label ellipsis text-black">Herr Michel Trenkner</div>
+                                          </div>
+                                        </div><!---->
+                                      </div>
+                                      <div class="col-12 column"><!---->
+                                        <div
+                                          class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                          role="listitem"
+                                          style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                          <div
+                                            class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                            <div class="q-item__label text-primary ellipsis" title="Adresse">Adresse
+                                              <!---->
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                            style="padding: 0px;">
+                                            <div class="q-item__label ellipsis text-black">Lalilu. 100<br>78467
+                                              Konstanz</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="q-card__actions justify-end q-card__actions--horiz row q-pa-md row">
+                                    <button
+                                      class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                      tabindex="0" type="button" test-id="personal-data-change"><span
+                                        class="q-focus-helper"></span><span
+                                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                          class="block">Bearbeiten</span></span></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-6 col-xs-12" data-name="card-payment-method">
+                                <div class="q-card q-card--flat no-shadow wlk-card-info full-height column">
+                                  <div>
+                                    <div class="q-item q-item-type row no-wrap q-mt-sm" role="listitem">
+                                      <div class="q-item__section column q-item__section--main justify-center">
+                                        <div class="q-item__label text-h5 title" style="margin: 0px;">Zahlweg</div>
+                                      </div>
+                                      <div
+                                        class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                        <div class="q-avatar bg-primary lg-avatar avatar-title"
+                                          style="font-size: 3.5rem;">
+                                          <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                              class="q-icon text-white w-icon-payment-method icon-title"
+                                              aria-hidden="true" role="presentation" style="font-size: 32px;"> </i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="q-card__section q-card__section--vert column full-width card-content"
+                                    style="flex: 1 1 0%;">
+                                    <div class="full-width">
+                                      <div
+                                        class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                        role="listitem"
+                                        style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                          <div class="q-item__label text-primary ellipsis" title="Zahlwegnutzung">
+                                            Zahlwegnutzung <!----></div>
+                                        </div>
+                                        <div
+                                          class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                          style="padding: 0px;">
+                                          <div class="q-item__label ellipsis text-black">Bankeinzug und Gutschrift</div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                        role="listitem"
+                                        style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                          <div class="q-item__label text-primary ellipsis" title="Kontoinhaber">
+                                            Kontoinhaber <!----></div>
+                                        </div>
+                                        <div
+                                          class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                          style="padding: 0px;">
+                                          <div class="q-item__label ellipsis text-black">MICHEL TRENKNER</div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                        role="listitem"
+                                        style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                          <div class="q-item__label text-primary ellipsis" title="Bank">Bank <!---->
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                          style="padding: 0px;">
+                                          <div class="q-item__label ellipsis text-black">Postbank Ndl der Deutsche Bank
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                        role="listitem"
+                                        style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                          <div class="q-item__label text-primary ellipsis" title="IBAN">IBAN <!---->
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                          style="padding: 0px;">
+                                          <div class="q-item__label ellipsis text-black">Endet auf: 1234</div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                        role="listitem"
+                                        style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                          <div class="q-item__label text-primary ellipsis" title="BIC">BIC <!----></div>
+                                        </div>
+                                        <div
+                                          class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                          style="padding: 0px;">
+                                          <div class="q-item__label ellipsis text-black">PBNKDEFFXXX</div>
+                                        </div>
+                                      </div>
+                                    </div><!---->
+                                  </div>
+                                  <div class="q-card__actions justify-end q-card__actions--horiz row q-pa-md row">
+                                    <button
+                                      class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                      tabindex="0" type="button" data-name="btn-delete-payment-method"><span
+                                        class="q-focus-helper"></span><span
+                                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                          class="block">Entfernen</span></span><!----></button><button
+                                      class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                      tabindex="0" type="button" data-name="btn-edit-payment-method"><span
+                                        class="q-focus-helper"></span><span
+                                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                          class="block">Bearbeiten</span></span></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-6 col-md-6 col-xs-12" data-name="invoice-address-card">
+                                <div class="q-card q-card--flat no-shadow wlk-card-info full-height column">
+                                  <div>
+                                    <div class="q-item q-item-type row no-wrap q-mt-sm" role="listitem">
+                                      <div class="q-item__section column q-item__section--main justify-center">
+                                        <div class="q-item__label text-h5 title" style="margin: 0px;">Rechnungsadresse
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                        <div class="q-avatar bg-primary lg-avatar avatar-title"
+                                          style="font-size: 3.5rem;">
+                                          <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                              class="q-icon text-white w-icon-invoice-address icon-title"
+                                              aria-hidden="true" role="presentation" style="font-size: 32px;"> </i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="q-card__section q-card__section--vert column full-width card-content"
+                                    style="flex: 1 1 0%;">
+                                    <div class="full-width">
+                                      <p>Keine abweichende Rechnungsadresse erfasst</p>
+                                    </div>
+                                  </div>
+                                  <div class="q-card__actions justify-end q-card__actions--horiz row q-pa-md row">
+                                    <button
+                                      class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                      tabindex="0" type="button" data-name="add-invoice-address"><span
+                                        class="q-focus-helper"></span><span
+                                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                          class="block">Hinzufügen</span></span></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-6 col-xs-12">
+                                <div class="q-card q-card--flat no-shadow wlk-card-info full-height column">
+                                  <div>
+                                    <div class="q-item q-item-type row no-wrap q-mt-sm" role="listitem">
+                                      <div class="q-item__section column q-item__section--main justify-center">
+                                        <div class="q-item__label text-h5 title" style="margin: 0px;">Aktueller Abschlag
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                        <div class="q-avatar bg-primary lg-avatar avatar-title"
+                                          style="font-size: 3.5rem;">
+                                          <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                              class="q-icon text-white w-icon-deduction icon-title" aria-hidden="true"
+                                              role="presentation" style="font-size: 32px;"> </i></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="q-card__section q-card__section--vert column full-width card-content"
+                                    style="flex: 1 1 0%;">
+                                    <div class="full-width">
+                                      <div
+                                        class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                        role="listitem"
+                                        style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                          <div class="q-item__label text-primary ellipsis"
+                                            title="SeeEnergie ÖkostromMitarbeiter">SeeEnergie ÖkostromMitarbeiter
+                                            <!---->
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                          style="padding: 0px;">
+                                          <div class="q-item__label ellipsis text-black">39,00 EUR</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="q-card__actions justify-end q-card__actions--horiz row q-pa-md row"><a
+                                      class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                      tabindex="0" href="/portal-seeconnect/energie/deduction"><span class="q-focus-helper"></span><span
+                                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                          class="block">Übersicht</span></span></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="energy-customer-account-page-additional-content" class="constraint-max-width"></div>
+                      <div class="contract-overview bg-white q-pb-lg q-pt-lg" test-id="overview-contract">
+                        <div class="constraint-max-width">
+                          <div>
+                            <div class="q-card q-card--flat no-shadow bg-grey-2" test-id="contract-overview">
+                              <div class="filter row q-pb-md q-gutter-x-sm bg-white items-center"><i
+                                  class="q-icon text-primary w-icon-contract" aria-hidden="true" role="presentation"
+                                  style="font-size: 32px;"> </i>
+                                <div class="q-item__label text-h5 q-px-md" style="margin: 0px;">Meine Verträge</div>
+                                <button
+                                  class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable filter-btn active"
+                                  tabindex="0" type="button" test-id="contract-filter-active"
+                                  style="font-size: 14px; display: none;"><span class="q-focus-helper"></span><span
+                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                      class="block">Aktive (1)</span></span></button><!---->
+                              </div>
+                              <div
+                                class="q-tabs row no-wrap items-center q-tabs--not-scrollable q-tabs--horizontal q-tabs__arrows--inside q-tabs--mobile-with-arrows wlk-tabs-overview"
+                                role="tablist"><!---->
+                                <div
+                                  class="q-tabs__content scroll--mobile row no-wrap items-center self-stretch hide-scrollbar relative-position q-tabs__content--align-justify">
+                                  <div
+                                    class="q-tab relative-position self-stretch flex flex-center text-center q-tab--active q-tab--no-caps q-focusable q-hoverable cursor-pointer contract-tab overview-tab active"
+                                    tabindex="0" role="tab" aria-selected="true" test-id="contract-tab-558624-3"
+                                    style="color: rgb(219, 67, 0); transition: 300ms;">
+                                    <div class="q-focus-helper" tabindex="-1"></div>
+                                    <div
+                                      class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                      <div class="indicator top"></div>
+                                      <div class="q-item q-item-type row no-wrap" role="listitem" style="flex: 1 1 0%;">
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                          <div class="q-avatar"
+                                            style="font-size: 38px; background: rgb(219, 67, 0); color: rgb(255, 255, 255);">
+                                            <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                                class="q-icon w-icon-energy-electricity" aria-hidden="true"
+                                                role="presentation"> </i></div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="q-item__section column q-item__section--side justify-center column justify-start">
+                                          <div class="q-item__label">SeeEnergie ÖkostromMitarbeiter</div>
+                                          <div
+                                            class="q-item__label q-item__label--caption text-caption contract-number">
+                                            558624-3 <!----></div>
+                                        </div>
+                                      </div><!---->
+                                      <div class="indicator bottom"></div>
+                                    </div>
+                                    <div class="q-tab__indicator absolute-bottom text-transparent"></div>
+                                  </div>
+                                </div><i
+                                  class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--left absolute q-tab__icon"
+                                  aria-hidden="true" role="presentation">chevron_left</i><i
+                                  class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--right absolute q-tab__icon q-tabs__arrow--faded"
+                                  aria-hidden="true" role="presentation">chevron_right</i>
+                              </div>
+                              <div class="q-tab-panels q-panel-parent bg-transparent customer-card-selected">
+                                <div class="q-panel scroll" role="tabpanel" style="--q-transition-duration: 300ms;">
+                                  <div class="q-tab-panel bg-transparent row full-width q-px-none q-pr-md"
+                                    role="tabpanel">
+                                    <div class="full-width row q-col-gutter-md wlk-grid-gutter">
+                                      <div class="col-12">
+                                        <div class="q-card q-card--flat no-shadow wlk-card-info full-height column">
+                                          <div>
+                                            <div class="q-item q-item-type row no-wrap q-mt-sm" role="listitem">
+                                              <div class="q-item__section column q-item__section--main justify-center">
+                                                <div class="q-item__label text-h5 title" style="margin: 0px;">
+                                                  Vertragsdaten</div>
+                                              </div>
+                                              <div
+                                                class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                                <div class="q-avatar bg-primary lg-avatar avatar-title"
+                                                  style="font-size: 3.5rem;">
+                                                  <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                                      class="q-icon text-white w-icon-contract icon-title"
+                                                      aria-hidden="true" role="presentation" style="font-size: 32px;">
+                                                    </i></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-card__section q-card__section--vert column full-width card-content"
+                                            style="flex: 1 1 0%;">
+                                            <div class="full-width contract-data column-layout"
+                                              test-id="contract-details-558624-3"
+                                              style="grid-template-rows: repeat(3, max-content);"><!----><!----><!---->
+                                              <div
+                                                class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                role="listitem"
+                                                style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                <div
+                                                  class="q-item__section column q-item__section--side justify-center col-7 col-md-7 col-sm-5 col-xs-12 q-pr-sm label">
+                                                  <div class="q-item__label text-primary ellipsis"
+                                                    title="Abnahmestelle">Abnahmestelle <!----></div>
+                                                </div>
+                                                <div
+                                                  class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-7 col-xs-12"
+                                                  style="padding: 0px;">
+                                                  <div class="q-item__label ellipsis text-black">Lalilu. 100<br>78467
+                                                    Konstanz</div>
+                                                </div>
+                                              </div><!---->
+                                              <div
+                                                class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                role="listitem"
+                                                style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                <div
+                                                  class="q-item__section column q-item__section--side justify-center col-7 col-md-7 col-sm-5 col-xs-12 q-pr-sm label">
+                                                  <div class="q-item__label text-primary ellipsis"
+                                                    title="Belieferungsbeginn">Belieferungsbeginn <!----></div>
+                                                </div>
+                                                <div
+                                                  class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-7 col-xs-12"
+                                                  style="padding: 0px;">
+                                                  <div class="q-item__label ellipsis row items-center">29.11.2022
+                                                    <!---->
+                                                  </div>
+                                                </div>
+                                              </div><!---->
+                                              <div
+                                                class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                role="listitem"
+                                                style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                <div
+                                                  class="q-item__section column q-item__section--side justify-center col-7 col-md-7 col-sm-5 col-xs-12 q-pr-sm label">
+                                                  <div class="q-item__label text-primary ellipsis"
+                                                    title="Vertragsbindung bis">Vertragsbindung bis <!----></div>
+                                                </div>
+                                                <div
+                                                  class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-7 col-xs-12"
+                                                  style="padding: 0px;">
+                                                  <div class="q-item__label ellipsis text-black">25.12.2024</div>
+                                                </div>
+                                              </div><!----><!----><!---->
+                                              <div
+                                                class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                role="listitem"
+                                                style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                <div
+                                                  class="q-item__section column q-item__section--side justify-center col-7 col-md-7 col-sm-5 col-xs-12 q-pr-sm label">
+                                                  <div class="q-item__label text-primary ellipsis"
+                                                    title="Kündigungsfrist">Kündigungsfrist <!----></div>
+                                                </div>
+                                                <div
+                                                  class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-7 col-xs-12"
+                                                  style="padding: 0px;">
+                                                  <div class="q-item__label ellipsis text-black">1 Monat</div>
+                                                </div>
+                                              </div><!---->
+                                              <div
+                                                class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                role="listitem"
+                                                style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                <div
+                                                  class="q-item__section column q-item__section--side justify-center col-7 col-md-7 col-sm-5 col-xs-12 q-pr-sm label">
+                                                  <div class="q-item__label text-primary ellipsis"
+                                                    title="Kündigungseingang bis spätestens">Kündigungseingang bis
+                                                    spätestens <!----></div>
+                                                </div>
+                                                <div
+                                                  class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-7 col-xs-12"
+                                                  style="padding: 0px;">
+                                                  <div class="q-item__label ellipsis text-black">25.11.2024</div>
+                                                </div>
+                                              </div><!---->
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-card__actions justify-end q-card__actions--horiz row q-pa-md row contract-data-actions">
+                                            <button
+                                              class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                              tabindex="0" type="button" test-id="my-prices-btn"><span
+                                                class="q-focus-helper"></span><span
+                                                class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                                  class="block">Meine Preise</span></span></button><a
+                                              class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                              tabindex="0" role="button"><span class="q-focus-helper"></span><span
+                                                class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                                  class="block">Vertrag wechseln</span></span></a><!----><!---->
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-8 col-sm-7">
+                                        <div class="q-card q-card--flat no-shadow wlk-card-info full-height column">
+                                          <div>
+                                            <div class="q-item q-item-type row no-wrap q-mt-sm" role="listitem">
+                                              <div class="q-item__section column q-item__section--main justify-center">
+                                                <div class="q-item__label text-h5 title" style="margin: 0px;">
+                                                  Zählerstand</div>
+                                              </div>
+                                              <div
+                                                class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                                <div class="q-avatar bg-primary lg-avatar avatar-title"
+                                                  style="font-size: 3.5rem;">
+                                                  <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                                      class="q-icon text-white w-icon-meter icon-title"
+                                                      aria-hidden="true" role="presentation" style="font-size: 32px;">
+                                                    </i></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-card__section q-card__section--vert column full-width card-content"
+                                            style="flex: 1 1 0%;">
+                                            <div class="full-height full-width">
+                                              <div
+                                                class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                role="listitem"
+                                                style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                <div
+                                                  class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                                  <div class="q-item__label text-primary ellipsis" title="Zählernummer">
+                                                    Zählernummer <!----></div>
+                                                </div>
+                                                <div
+                                                  class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                                  style="padding: 0px;">
+                                                  <div class="q-item__label ellipsis text-black">S12345</div>
+                                                </div>
+                                              </div>
+                                              <div>
+                                                <div
+                                                  class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                  role="listitem"
+                                                  style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                  <div
+                                                    class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                                    <div class="q-item__label text-primary ellipsis"
+                                                      title="Zählwerk Wirkarbeit HT/1.8.1">Zählwerk Wirkarbeit HT/1.8.1
+                                                      <!---->
+                                                    </div>
+                                                  </div>
+                                                  <div
+                                                    class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                                    style="padding: 0px;">
+                                                    <div class="q-item__label ellipsis text-black">29.262 kWh <span
+                                                        class="text-primary label">vom</span> 14.11.2024</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-card__actions justify-end q-card__actions--horiz row q-pa-md row">
+                                            <a class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                              tabindex="0" href="/portal-seeconnect/energie/meter-reading/S49592"><span
+                                                class="q-focus-helper"></span><span
+                                                class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                                  class="block">Ablesung</span></span></a><!---->
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-4 col-sm-5 col-xs-12 contract-pricing-card">
+                                        <div class="q-card q-card--flat no-shadow wlk-card-info full-height column">
+                                          <div>
+                                            <div class="q-item q-item-type row no-wrap q-mt-sm" role="listitem">
+                                              <div class="q-item__section column q-item__section--main justify-center">
+                                                <div class="q-item__label text-h5 title" style="margin: 0px;">Kosten
+                                                </div>
+                                              </div>
+                                              <div
+                                                class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                                <div class="q-avatar bg-primary lg-avatar avatar-title"
+                                                  style="font-size: 3.5rem;">
+                                                  <div class="q-avatar__content row flex-center overflow-hidden"><i
+                                                      class="q-icon text-white w-icon-cost icon-title"
+                                                      aria-hidden="true" role="presentation" style="font-size: 32px;">
+                                                    </i></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-card__section q-card__section--vert column full-width card-content"
+                                            style="flex: 1 1 0%;">
+                                            <div class="full-width full-height">
+                                              <div
+                                                class="q-item q-item-type row no-wrap q-item--dense key-value-label items-start q-px-none"
+                                                role="listitem"
+                                                style="max-width: 95%; flex-basis: unset; padding: 6px 0px; flex-wrap: wrap;">
+                                                <div
+                                                  class="q-item__section column q-item__section--side justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm label">
+                                                  <div class="q-item__label text-primary ellipsis" title="Abschlag">
+                                                    Abschlag <!----></div>
+                                                </div>
+                                                <div
+                                                  class="q-item__section column q-item__section--main justify-center col-5 col-md-5 col-sm-5 col-xs-12 q-pr-sm"
+                                                  style="padding: 0px;">
+                                                  <div class="q-item__label ellipsis text-black">39,00 EUR</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="q-card__actions justify-end q-card__actions--horiz row q-pa-md row">
+                                            <a class="q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable wlk-btn"
+                                              tabindex="0" href="/portal-seeconnect/energie/deduction?changeContract=558624-3"><span
+                                                class="q-focus-helper"></span><span
+                                                class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                                  class="block">Anpassen</span></span></a>
+                                          </div>
+                                        </div>
+                                      </div><!----><!---->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                </div>
+              </div>
+              <footer data-v-fddb5de4=""
+                class="q-footer q-layout__section--marginal absolute-bottom text-white dimmable dimmed-object"><!---->
+                <div data-v-fddb5de4="" class="q-toolbar row no-wrap items-center constraint-max-width" role="toolbar">
+                  <div data-v-fddb5de4="" class="pageLinks text-white row justify-start"><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/service/kontakt/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Kontakt</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/impressum/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Impressum</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/datenschutz/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Datenschutz</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/datenschutz/#cookies" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Cookies</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/veroeffentlichungspflichten/"
+                      target="_blank"><span class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Veröffentlichungspflichten</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/schlichtungsstelle-energie/"
+                      target="_blank"><span class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Schlichtungsstelle Energie</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/compliance/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Compliance</span></span></a><button data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" type="button"><span class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Kontaktformular</span></span></button></div>
+                  <div data-v-fddb5de4="" class="q-space"></div>
+                  <div data-v-fddb5de4="" class="row q-gutter-x-sm items-center"></div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        #error {
+          height: 100%;
+          align-items: center;
+          display: flex !important;
+        }
+      </style>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

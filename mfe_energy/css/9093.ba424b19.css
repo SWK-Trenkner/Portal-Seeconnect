@@ -1,0 +1,40 @@
+.contactRequestMessage.q-textarea textarea {
+  min-height: 200px !important;
+}
+.last-invoices-expansion-item.disabled {
+  cursor: unset !important;
+}
+.last-invoices-item > .q-item__section {
+  margin-left: 0 !important;
+}
+.unit-label {
+  padding-top: 12px;
+  width: 50px;
+}
+.counter-label {
+  color: #000;
+  font-size: 0.75rem;
+  padding-left: 12px;
+}
+.last-value-label {
+  letter-spacing: 0;
+}
+.section-contact-form {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.error-avatar {
+  font-size: 40px;
+}
+.proforma-invoice-stepper .q-inner-loading {
+  background: hsla(0, 0%, 100%, 0.9);
+}
+.proforma-invoice-stepper .inner-loading-container {
+  margin: auto 3rem;
+  width: 80%;
+}
+.proforma-invoice-stepper .inner-loading-container .q-linear-progress {
+  margin-bottom: 0.5rem;
+}

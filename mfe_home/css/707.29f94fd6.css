@@ -1,0 +1,9 @@
+.contactRequestMessage.q-textarea textarea {
+  min-height: 200px !important;
+}
+.q-footer[data-v-fddb5de4] {
+  background: var(--footer-background, var(--q-primary));
+}
+.q-footer .mobile-tb[data-v-fddb5de4] {
+  flex-wrap: wrap !important;
+}

@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "w-swkonstanz-icon";
+  src: url("/portal-seeconnect/resources/fonts/w-swkonstanz-icon.eot?kqewmt");
+  src: url("/portal-seeconnect/resources/fonts/w-swkonstanz-icon.eot?kqewmt#iefix")
+      format("embedded-opentype"),
+    url("/portal-seeconnect/resources/fonts/w-swkonstanz-icon.ttf?kqewmt") format("truetype"),
+    url("/portal-seeconnect/resources/fonts/w-swkonstanz-icon.woff?kqewmt") format("woff"),
+    url("/portal-seeconnect/resources/fonts/w-swkonstanz-icon.svg?kqewmt#w-swkonstanz-icon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="w-icon-"],
+[class*=" w-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "w-swkonstanz-icon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.w-icon-move:before {
+  content: "\e91c";
+}
+.w-icon-proforma-invoice:before {
+  content: "\e91d";
+}
+.w-icon-consumption:before {
+  content: "\e91e";
+}
+.w-icon-deduction:before {
+  content: "\e91f";
+}
+.w-icon-contract:before {
+  content: "\e920";
+}
+.w-icon-invoice-address:before {
+  content: "\e921";
+}
+.w-icon-mailbox:before {
+  content: "\e922";
+}
+.w-icon-meter:before {
+  content: "\e923";
+}
+.w-icon-personal-information:before {
+  content: "\e924";
+}
+.w-icon-payment-method:before {
+  content: "\e925";
+}
+.w-icon-cost:before {
+  content: "\e926";
+}
+.w-icon-account-statement:before {
+  content: "\e927";
+}
+.w-icon-add_circle_outline:before {
+  content: "\e928";
+}
+.w-icon-home:before {
+  content: "\e929";
+}
+.w-icon-expand:before {
+  content: "\e92a";
+}
+.w-icon-logout:before {
+  content: "\e92b";
+}
+.w-icon-energy-electricity:before {
+  content: "\e92c";
+}
+.w-icon-energy-natural-gas:before {
+  content: "\e92d";
+}
+.w-icon-energy-water:before {
+  content: "\e92e";
+}
+.w-icon-energy-waste-water:before {
+  content: "\e92f";
+}
+.w-icon-energy-warm-water:before {
+  content: "\e90a";
+}
+.w-icon-energy-district-heating:before {
+  content: "\e930";
+}
+.w-icon-energy-e-mobility:before {
+  content: "\e931";
+}
+.w-icon-energy-internet:before {
+  content: "\e932";
+}
+.w-icon-support-phone:before {
+  content: "\e933";
+}
+.w-icon-support-contact-form:before {
+  content: "\e934";
+}
+.w-icon-support-faq:before {
+  content: "\e935";
+}
+.w-icon-support-email:before {
+  content: "\e936";
+}
+.w-icon-order-generic:before {
+  content: "\e937";
+}
+.w-icon-order-admin:before {
+  content: "\e938";
+}
+.w-icon-order-product:before {
+  content: "\e939";
+}
+.w-icon-msb-ebalance:before {
+  content: "\e93a";
+}
+.w-icon-info-ico-devices:before {
+  content: "\e93b";
+}
+.w-icon-cloud-attention:before {
+  content: "\e900";
+}
+.w-icon-cloud-lightning:before {
+  content: "\e901";
+}
+.w-icon-search-notFound:before {
+  content: "\e902";
+}
+.w-icon-product-overview:before {
+  content: "\e903";
+}
+.w-icon-calculator-person:before {
+  content: "\e904";
+}
+.w-icon-calculator-group:before {
+  content: "\e905";
+}
+.w-icon-order-not-available:before {
+  content: "\e908";
+}
+.w-icon-energy-rainwater:before {
+  content: "\e906";
+}
+.w-icon-portal-not-available:before {
+  content: "\e907";
+}
+.w-icon-reading-not-available:before {
+  content: "\e909";
+}
+.w-icon-energy-liquid-gas:before {
+  content: "\e90b";
+}
+.w-icon-cnxt_energy:before {
+  content: "\e90c";
+}
+.w-icon-cnxt_card:before {
+  content: "\e90d";
+}
+.w-icon-cnxt_emobility:before {
+  content: "\e90e";
+}
+.w-icon-emob_charging:before {
+  content: "\e90f";
+}
+.w-icon-transaction:before {
+  content: "\e910";
+}
+.w-icon-cnxt_profile:before {
+  content: "\e911";
+}
+.w-icon-acct-discount:before {
+  content: "\e912";
+}
+.w-icon-acct-bus:before {
+  content: "\e913";
+}
+.w-icon-acct-ferry:before {
+  content: "\e914";
+}
+.w-icon-acct-pool:before {
+  content: "\e940";
+}
+.w-icon-acct-loc-bus:before {
+  content: "\e915";
+}
+.w-icon-acct-loc-ferry:before {
+  content: "\e916";
+}
+.w-icon-acct-loc-rail:before {
+  content: "\e917";
+}
+.w-icon-acct-parking:before {
+  content: "\e918";
+}
+.w-icon-acct-rail:before {
+  content: "\e919";
+}
+.w-icon-acct-schedule:before {
+  content: "\e91a";
+}
+.w-icon-location:before {
+  content: "\e91b";
+}
+.w-icon-change-account:before {
+  content: "\e93c";
+}
+.w-icon-logout-02:before {
+  content: "\e93d";
+}
+.w-icon-my-account:before {
+  content: "\e93e";
+}
+.w-icon-energy-card:before {
+  content: "\e93f";
+}
+.w-icon-shopping-cart:before {
+  content: "\e941";
+}
+.w-icon-customer-status-premium:before {
+  content: "\e942";
+}
+.w-icon-newsletter-brands:before {
+  content: "\e943";
+}

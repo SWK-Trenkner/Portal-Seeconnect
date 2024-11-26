@@ -1,0 +1,9 @@
+.q-card.wlk-card-info .q-card__actions {
+  padding-top: 0;
+}
+.q-card.wlk-card-info .lg-avatar {
+  margin-bottom: -1.25rem;
+}
+.contactRequestMessage.q-textarea textarea {
+  min-height: 200px !important;
+}

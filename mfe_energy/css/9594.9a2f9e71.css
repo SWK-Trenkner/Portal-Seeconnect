@@ -1,0 +1,15 @@
+.q-card.wlk-card-info .q-card__actions {
+  padding-top: 0;
+}
+.q-card.wlk-card-info .lg-avatar {
+  margin-bottom: -1.25rem;
+}
+.contract-termination-tab-panels .q-stepper--vertical .q-stepper__tab {
+  padding: 12px 0;
+}
+.contract-termination-tab-panels .q-stepper--vertical .q-stepper__step-inner {
+  padding: 0 0 32px 60px;
+}
+.termination-actions .q-btn {
+  min-width: unset !important;
+}

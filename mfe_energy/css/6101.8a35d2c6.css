@@ -1,0 +1,37 @@
+.q-banner.display-note {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2px !important;
+}
+.q-banner.display-note.info {
+  background: none !important;
+  border-color: var(--q-info) !important;
+}
+.q-banner.display-note.info .q-icon {
+  color: var(--q-info);
+}
+.q-banner.display-note.warning {
+  background: none !important;
+  border-color: var(--q-warning) !important;
+}
+.q-banner.display-note.warning .q-icon {
+  color: var(--q-warning);
+}
+.q-banner.display-note.positive {
+  background: none !important;
+  border-color: var(--q-positive) !important;
+}
+.q-banner.display-note.positive .q-icon {
+  color: var(--q-positive);
+}
+.q-banner.display-note.negative {
+  background: none !important;
+  border-color: var(--q-negative) !important;
+}
+.q-banner.display-note.negative .q-icon {
+  color: var(--q-negative);
+}
+.ellipsis-wrapper {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}

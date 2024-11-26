@@ -1,0 +1,75 @@
+.contactRequestMessage.q-textarea textarea {
+  min-height: 200px !important;
+}
+.contract-termination-tab-panels .q-stepper--vertical .q-stepper__tab {
+  padding: 12px 0;
+}
+.contract-termination-tab-panels .q-stepper--vertical .q-stepper__step-inner {
+  padding: 0 0 32px 60px;
+}
+.termination-actions .q-btn {
+  min-width: unset !important;
+}
+.price-dialog .loading-spinner {
+  height: 150px;
+  width: 150px;
+}
+.filter-btn.active {
+  text-decoration: underline;
+}
+.contract-data.column-layout {
+  display: grid;
+  grid-auto-flow: column;
+}
+.contract-data .key-value-label {
+  break-inside: avoid;
+  flex: 1;
+}
+.contract-data-actions {
+  margin-left: -8px;
+  margin-top: -8px;
+}
+.contract-data-actions .q-btn {
+  flex-basis: 130px !important;
+  margin: 8px 0 0 8px;
+}
+@media (max-width: 599.99px) {
+  .contract-overview .constraint-max-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.big-navigation {
+  background: #eee;
+  font-size: 20px;
+  transition: background 0.1s;
+}
+.big-navigation .q-btn__wrapper {
+  padding: 4px;
+}
+.big-navigation:hover {
+  background: var(--q-primary);
+  color: #fff !important;
+}
+.big-navigation .q-icon {
+  font-size: 100px;
+}
+.big-navigation .q-icon + span {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 599.99px) {
+  .big-navigation {
+    font-size: 90%;
+  }
+  .big-navigation .q-icon {
+    font-size: 80px;
+  }
+}
+@media (max-width: 400px) {
+  .big-navigation .q-icon {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,486 @@
+<html style="--vh: 9.64px;" dir="ltr" lang="de">
+
+<head>
+  <title>Stadtwerke Konstanz</title>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+
+
+  <script>function calculateVh() {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', vh + 'px');
+    }
+
+    // Initial calculation
+    calculateVh();
+
+    // Re-calculate on resize
+    window.addEventListener('resize', calculateVh);
+
+    // Re-calculate on device orientation change
+    window.addEventListener('orientationchange', calculateVh);</script>
+  <style>
+    body {
+      height: calc(100 * var(--vh));
+    }
+
+    .ssp-content {
+      /* height: 100%; */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      /* height: calc(100 * var(--vh));
+max-height: calc(100 * var(--vh)); */
+    }
+
+    .ssp-content #q-app {
+      height: 100%;
+    }
+
+    .ssp-content .main-content {
+      flex: 1;
+    }
+
+    #topnav {
+      flex-grow: 0;
+    }
+
+    [id^=single-spa-application],
+    .single-spa-container {
+      height: 100%;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .loading-txt {
+      line-height: 1.5;
+    }
+
+    #loadingMessage {
+      font-size: 18pt !important;
+      -webkit-font-smoothing: antialiased;
+      /* font-family: "Mulish Regular", sans-serif; */
+      color: #707071;
+    }
+
+    @media screen and (max-width: 599.99px) {
+      #loadingMessage {
+        font-size: 14pt !important;
+      }
+    }
+
+    .loading-spinner {
+      animation: loading-spinner 1.5s linear infinite;
+      width: 200px;
+      height: 200px;
+    }
+
+    svg .plug,
+    svg .socket {
+      fill: #E2001A;
+    }
+
+    svg .loop-normal {
+      fill: none;
+      stroke: #E2001A;
+      stroke-width: 10;
+    }
+
+    @keyframes loading-spinner {
+      from {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .preload-container {
+      width: 100%;
+      /* transform: translate(0, calc(calc(calc(50 * var(--vh)) - 50%) - 50px)); */
+      /* position: relative; */
+      font-family: arial, verdana, sans-serif;
+      color: #E2001A;
+      text-align: center;
+      position: absolute;
+      bottom: calc(50 * var(--vh) - 50px - 103.5px);
+    }
+
+    .preload-content {
+      max-width: 400px;
+      padding: 1.5rem 1.5rem 2rem 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-wrapper {
+      background-image: url('portal-seeconnect/resources/img/logo.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 200px;
+      height: 60px;
+      margin: 0 auto;
+    }
+
+    .loop-wrapper {
+      max-height: 200px;
+      margin: 2rem auto 3rem auto;
+    }
+  </style>
+  <style lang="css"></style>
+
+
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/909.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/94.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/906.949fdb19.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_navigation/css/601.a5b209d2.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_navigation/css/404.945c40ef.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/689.0f0c29aa.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_navigation/css/880.55ac0559.css">
+  <link href="/portal-seeconnect/resources/css/style.css" rel="stylesheet">
+  <link href="/portal-seeconnect/resources/css/icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/829.a9d866cd.css">
+  <link rel="stylesheet" type="text/css" href="/portal-seeconnect/mfe_home/css/707.29f94fd6.css">
+</head>
+
+<body class="desktop no-touch body--light"
+  style="--q-page-min-height: 782px; --topnav-height: 132px; --megamenu-height: 0px; --footer-height: 50px; --q-layout-height: 832px;">
+  <div id="appContainer" style="display: flex;" class="ssp-content">
+    <nav id="topnav">
+      <div id="single-spa-application:mfe_nav">
+        <div class="single-spa-container" data-v-app="">
+          <div class="navigation-context" name="mfe_nav">
+            <div class="q-layout-container overflow-hidden header-layout home-context home-context-header"><!---->
+              <div class="absolute-full" style="">
+                <div class="scroll" style="">
+                  <div class="q-layout q-layout--containerized" tabindex="-1"><!----><!---->
+                    <div class="top-nav q-header ssp-header">
+                      <div class="wlk-content-container row q-pa-md justify-between"><!---->
+                        <div class="company-logo relative-position column cursor-pointer"><img class="logo"
+                            src="portal-seeconnect/resources/img/logo.svg"></div>
+                        <div class="userinfo-menu-wrapper flex content-center watchSwitch q-ml-md" test-id="user-menu"
+                          style="cursor: pointer;">
+                          <div class="userData userinfo-menu flex column justify-center q-px-md text-right">
+                            <div class="text-bold userinfo-name">Michel Trenkner</div>
+                            <div class="text-light userinfo-description">Sie sind angemeldet</div>
+                          </div>
+                          <div class="q-avatar bg-primary userinfo-avatar">
+                            <div class="q-avatar__content row flex-center overflow-hidden">
+                              <div class="text-white initials">MT</div>
+                            </div>
+                          </div><!---->
+                        </div>
+                      </div>
+                      <div data-v-71e9f440="" class="full-width row navigation-bar">
+                        <div data-v-71e9f440="" class="row constraint-max-width navigation-items no-wrap"
+                          style="width: 100%;">
+                          <div data-v-71e9f440=""
+                            class="q-tabs row no-wrap items-center q-tabs--not-scrollable q-tabs--horizontal q-tabs__arrows--inside q-tabs--mobile-without-arrows home-tab"
+                            role="tablist"><!---->
+                            <div
+                              class="q-tabs__content scroll--mobile row no-wrap items-center self-stretch hide-scrollbar relative-position q-tabs__content--align-justify">
+                              <a data-v-71e9f440="" href="/portal-seeconnect/"
+                                style="text-decoration: none !important; color: currentcolor;">
+                                <div data-v-71e9f440=""
+                                  class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white q-px-none xxxxx"
+                                  tabindex="0" role="tab" aria-selected="false" style="height: 52px;">
+                                  <div class="q-focus-helper" tabindex="-1"></div>
+                                  <div
+                                    class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                    <i class="q-icon w-icon-home q-tab__icon" aria-hidden="true" role="presentation">
+                                    </i></div>
+                                  <div class="q-tab__indicator absolute-bottom"></div>
+                                </div>
+                              </a></div><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--left absolute q-tab__icon"
+                              aria-hidden="true" role="presentation">chevron_left</i><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--right absolute q-tab__icon q-tabs__arrow--faded"
+                              aria-hidden="true" role="presentation">chevron_right</i>
+                          </div>
+                          <div data-v-71e9f440=""
+                            class="q-tabs row no-wrap items-center q-tabs--not-scrollable q-tabs--horizontal q-tabs__arrows--inside q-tabs--mobile-without-arrows col-grow"
+                            role="tablist"><!---->
+                            <div
+                            class="q-tabs__content scroll--mobile row no-wrap items-center self-stretch hide-scrollbar relative-position q-tabs__content--align-left">
+                            <div data-v-71e9f440=""><a data-v-71e9f440="" href="/portal-seeconnect/seeconnect"
+                                style="text-decoration: none !important; color: currentcolor;">
+                                <div data-v-71e9f440=""
+                                  class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                  tabindex="0" role="tab" aria-selected="false" style="height: 52px;">
+                                  <div class="q-focus-helper" tabindex="-1"></div>
+                                  <div
+                                    class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                    <div class="q-tab__label">Seeconnectverträge</div>
+                                  </div>
+                                  <div class="q-tab__indicator absolute-bottom"></div>
+                                </div>
+                              </a></div>
+                            <div
+                              class="q-tabs__content scroll--mobile row no-wrap items-center self-stretch hide-scrollbar relative-position q-tabs__content--align-left">
+                              <div data-v-71e9f440=""><a data-v-71e9f440="" href="/portal-seeconnect/energie"
+                                  style="text-decoration: none !important; color: currentcolor;">
+                                  <div data-v-71e9f440=""
+                                    class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                    tabindex="0" role="tab" aria-selected="false" style="height: 52px;">
+                                    <div class="q-focus-helper" tabindex="-1"></div>
+                                    <div
+                                      class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                      <div class="q-tab__label">Energieverträge</div>
+                                    </div>
+                                    <div class="q-tab__indicator absolute-bottom"></div>
+                                  </div>
+                                </a></div>
+                              <div data-v-71e9f440=""><a data-v-71e9f440=""
+                                  style="text-decoration: none !important; color: currentcolor;">
+                                  <div data-v-71e9f440=""
+                                    class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                    tabindex="0" role="tab" aria-selected="false" style="height: 52px;">
+                                    <div class="q-focus-helper" tabindex="-1"></div>
+                                    <div
+                                      class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                      <div class="q-tab__label">Elektromobilität</div>
+                                    </div>
+                                    <div class="q-tab__indicator absolute-bottom"></div>
+                                  </div>
+                                </a></div>
+                              <div data-v-71e9f440="" class="row fit justify-end"><a data-v-71e9f440="" href="/portal-seeconnect/KNLogin/index.html"
+                                  style="text-decoration: none !important; color: currentcolor;">
+                                  <div data-v-71e9f440=""
+                                    class="q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer text-white"
+                                    tabindex="0" role="tab" aria-selected="false" style="height: 52px;">
+                                    <div class="q-focus-helper" tabindex="-1"></div>
+                                    <div
+                                      class="q-tab__content self-stretch flex-center relative-position q-anchor--skip non-selectable column">
+                                      <div class="q-tab__label">Mein KonstanzLogin Profil</div>
+                                    </div>
+                                    <div class="q-tab__indicator absolute-bottom"></div>
+                                  </div>
+                                </a></div>
+                            </div><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--left absolute q-tab__icon"
+                              aria-hidden="true" role="presentation">chevron_left</i><i
+                              class="q-icon notranslate material-icons q-tabs__arrow q-tabs__arrow--right absolute q-tab__icon q-tabs__arrow--faded"
+                              aria-hidden="true" role="presentation">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="mobileMenuSpace" class="full-width"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-content dimmable">
+      <div id="single-spa-application:mfe_home">
+        <div class="single-spa-container" data-v-app="">
+          <div id="q-app" class="home-context" name="mfe_home">
+            <div class="q-layout q-layout--standard" tabindex="-1" style="min-height: 964px;"><!----><!---->
+              <div class="q-page-container home-page-container" style="padding-bottom: 50px;">
+                <div class="dimmed-object">
+                  <main class="q-page ssp-start-page wlk-page-index"
+                    style="min-height: var(--q-page-min-height); padding: 16px;">
+                    <div class="q-pa-xl ssp-start-header">
+                      <div class="q-pb-xl header-content constraint-max-width">
+                        <div class="text-white text-h3 start-title">Willkommen <span>Michel Trenkner</span></div>
+                        <div class="text-white header-description">Hier erwarten Sie Informationen, Prozesse und
+                          Serviceleistungen zu Ihren Verträgen mit uns. Rund um die Uhr von jedem Gerät aus erreichbar.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="constraint-max-width q-py-md">
+                      <div class="row full-width justify-center">
+                        <div class="column col-md-12" style="margin-left: -0.5rem;">
+                          <div class="row full-width q-col-gutter-md q-mt-none justify-center">
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                              <div class="context-card-wrapper row fit">
+                                <div class="context-card-col">
+                                  <div class="q-card context-card full-height q-mb-md energy">
+                                    <div
+                                      class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable no-padding column full-height"
+                                      role="listitem" tabindex="0" >
+                                      <div class="q-focus-helper" tabindex="-1"></div>
+                                      <div class="card-section-container row fit energy">
+                                        <div class="top full-width top-center">
+                                          <div class="q-card__section q-card__section--vert card-section-icon"
+                                            avatar=""><img src="/portal-seeconnect/img/image47.gif" class="q-icon text-white w-icon-cnxt_energy" aria-hidden="true"
+                                              role="presentation" style="font-size: 6rem;"></div>
+                                        </div>
+                                      </div>
+                                      <div class="q-card__section q-card__section--vert">
+                                        <div class="context-card-title text-h5 text-bold">Seeconnectverträge</div>
+                                      </div>
+                                      <div class="q-card__section q-card__section--vert context-card-description">
+                                        Online-Kundenservice für TV, Internet und Telefon Vertragsdaten</div>
+                                      <div
+                                        class="q-card__actions justify-end q-card__actions--horiz row fit items-end q-pa-none">
+                                        <div class="q-item q-item-type row no-wrap context-card-link q-pt-md"
+                                          role="listitem"><a href="/portal-seeconnect/seeconnect/index.html"
+                                            class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase"
+                                            tabindex="0" role="button" style="min-width: 0px;"><span
+                                              class="q-focus-helper"></span><span
+                                              class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                                class="block">Zu meinen Seeconnectverträgen →</span></span></a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                              <div class="context-card-wrapper row fit">
+                                <div class="context-card-col">
+                                  <div class="q-card context-card full-height q-mb-md energy">
+                                    <div
+                                      class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable no-padding column full-height"
+                                      role="listitem" tabindex="0">
+                                      <div class="q-focus-helper" tabindex="-1"></div>
+                                      <div class="card-section-container row fit energy">
+                                        <div class="top full-width top-center">
+                                          <div class="q-card__section q-card__section--vert card-section-icon"
+                                            avatar=""><i class="q-icon text-white w-icon-cnxt_energy" aria-hidden="true"
+                                              role="presentation" style="font-size: 6rem;"> </i></div>
+                                        </div>
+                                      </div>
+                                      <div class="q-card__section q-card__section--vert">
+                                        <div class="context-card-title text-h5 text-bold">Energieverträge</div>
+                                      </div>
+                                      <div class="q-card__section q-card__section--vert context-card-description">
+                                        Online-Kundenservice für Ihre Vertragsdaten und Energie</div>
+                                      <div
+                                        class="q-card__actions justify-end q-card__actions--horiz row fit items-end q-pa-none">
+                                        <div class="q-item q-item-type row no-wrap context-card-link q-pt-md"
+                                          role="listitem"><a
+                                            class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase"
+                                            tabindex="0" role="button" style="min-width: 0px;"><span
+                                              class="q-focus-helper"></span><span
+                                              class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                                class="block">Zu meinen Energieverträgen →</span></span></a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                              <div class="context-card-wrapper row fit">
+                                <div class="context-card-col">
+                                  <div class="q-card context-card full-height q-mb-md emobility">
+                                    <div
+                                      class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable no-padding column full-height"
+                                      role="listitem" tabindex="0">
+                                      <div class="q-focus-helper" tabindex="-1"></div>
+                                      <div class="card-section-container row fit emobility">
+                                        <div class="top full-width top-center">
+                                          <div class="q-card__section q-card__section--vert card-section-icon"
+                                            avatar=""><i class="q-icon text-white w-icon-cnxt_emobility"
+                                              aria-hidden="true" role="presentation" style="font-size: 6rem;"> </i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="q-card__section q-card__section--vert">
+                                        <div class="context-card-title text-h5 text-bold">Elektromobilität</div>
+                                      </div>
+                                      <div class="q-card__section q-card__section--vert context-card-description">Ihre
+                                        Ladevorgänge, Rechnungen und vieles mehr auf einen Blick</div>
+                                      <div
+                                        class="q-card__actions justify-end q-card__actions--horiz row fit items-end q-pa-none">
+                                        <div class="q-item q-item-type row no-wrap context-card-link q-pt-md"
+                                          role="listitem"><a
+                                            class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase"
+                                            tabindex="0" role="button" style="min-width: 0px;"><span
+                                              class="q-focus-helper"></span><span
+                                              class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                                class="block">Zu meiner Ladekarte →</span></span></a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column col-12" style="margin-left: 1rem;"><!----></div>
+                      </div>
+                    </div>
+                    <div id="sspa-advertising-interferer" class="constraint-max-width"></div>
+                  </main>
+                </div>
+              </div>
+              <footer data-v-fddb5de4="" class="q-footer q-layout__section--marginal absolute-bottom text-white"><!---->
+                <div data-v-fddb5de4="" class="q-toolbar row no-wrap items-center constraint-max-width" role="toolbar">
+                  <div data-v-fddb5de4="" class="pageLinks text-white row justify-start"><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/service/kontakt/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Kontakt</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/impressum/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Impressum</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/datenschutz/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Datenschutz</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/datenschutz/#cookies" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Cookies</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/veroeffentlichungspflichten/"
+                      target="_blank"><span class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Veröffentlichungspflichten</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/schlichtungsstelle-energie/"
+                      target="_blank"><span class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Schlichtungsstelle Energie</span></span></a><a data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" href="https://www.stadtwerke-konstanz.de/compliance/" target="_blank"><span
+                        class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Compliance</span></span></a><button data-v-fddb5de4=""
+                      class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable btn-plain footer-link no-focus"
+                      tabindex="0" type="button"><span class="q-focus-helper"></span><span
+                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                          class="block">Kontaktformular</span></span></button></div>
+                  <div data-v-fddb5de4="" class="q-space"></div>
+                  <div data-v-fddb5de4="" class="row q-gutter-x-sm items-center"></div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+
+<style>
+
+  
+  </style>
+
+</html>

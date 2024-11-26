@@ -1,0 +1,61 @@
+.q-card.context-card {
+  border-radius: var(--wlk-box-border-radius);
+}
+.q-card.context-card .card-section-container .side {
+  align-items: center;
+  background-color: var(--q-primary);
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+.q-card.context-card .card-section-container .context-card-link .q-btn {
+  color: var(--q-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: unset;
+}
+.q-card.context-card
+  .card-section-container
+  .context-card-link
+  .q-btn.uppercase-link {
+  text-transform: uppercase;
+}
+.q-card.context-card
+  .card-section-container
+  .context-card-link
+  .q-btn
+  .q-focus-helper {
+  display: none;
+}
+.context-card .q-card__section--vert.context-card-description {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+.q-card.context-card .card-section-container .top {
+  border-radius: var(--wlk-box-border-radius) var(--wlk-box-border-radius) 0 0;
+  display: flex;
+  height: 200px;
+}
+.q-card.context-card .card-section-container .top.top-center {
+  align-items: center;
+  justify-content: center;
+}
+.q-card.context-card .context-card-link a {
+  color: var(--q-primary);
+  font-size: 1em;
+  font-weight: 700;
+  padding: unset;
+}
+.q-card.context-card .context-card-link a.uppercase-link {
+  font-weight: unset;
+  text-transform: uppercase;
+}
+.q-card.context-card .context-card-link a .q-focus-helper {
+  display: none;
+}
+.context-card-wrapper {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}

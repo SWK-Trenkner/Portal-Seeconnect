@@ -1,0 +1,419 @@
+@import url("/portal-seeconnect/resources/fonts/germalt/germalt-fonts.css");
+@import url("icons.css");
+
+html body {
+  --q-color-primary: #e2001a;
+  --q-color-primary-light: #e2001a;
+  --q-color-secondary: #acacac;
+  --q-primary: #e2001a;
+  --q-primary--rgb: 130, 158, 30;
+  --q-primary-light: #e2001a;
+  --q-secondary: #acacac;
+  --q-secondary--rgb: 172, 172, 172;
+
+  --card-primary-override: var(--q-primary);
+  --emobility-primary-override: var(--q-primary);
+
+  --wlk-grid-gutter-width: 30px;
+
+  --wlk-font-family-headings: "Germalt-Bold", sans-serif;
+  --wlk-font-family-base: "Germalt-Light", sans-serif;
+  --wlk-body-font-color: #464646;
+
+  --wlk-box-border-radius: 10px;
+  --wlk-box-shadow: 0 2px 10px#00000033;
+
+  --wlk-btn-border-radius: 10px;
+  --wlk-btn-font-size: 15px;
+  --wlk-btn-line-height: 1;
+  --wlk-btn-font-family: "Germalt-Regular", sans-serif;
+  --wlk-btn-font-weight: normal;
+
+  font-family: var(--wlk-font-family-base) !important;
+  color: var(--wlk-body-font-color);
+}
+
+/*Typo*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6,
+h3.page-title {
+  font-family: var(--wlk-font-family-headings) !important;
+  color: var(--q-color-primary);
+}
+
+h3 {
+  font-size: 2em !important;
+  font-weight: normal !important;
+}
+.text-weight-bold,
+.text-bold {
+  font-weight: normal;
+  font-family: var(--wlk-font-family-headings);
+}
+
+/*Quasar elements*/
+
+@media (min-width: 769px) {
+  .wlk-grid-gutter.q-col-gutter-y-md > *,
+  .wlk-grid-gutter.q-col-gutter-md > * {
+    padding-top: var(--wlk-grid-gutter-width);
+  }
+
+  .wlk-grid-gutter.q-col-gutter-md > *,
+  .wlk-grid-gutter.q-col-gutter-x-md > *,
+  .wlk-grid-gutter.q-col-gutter-y-md > *,
+  .wlk-grid-gutter.q-col-gutter-md > * {
+    padding-left: var(--wlk-grid-gutter-width);
+  }
+
+  .wlk-grid-gutter.q-col-gutter-x-md,
+  .wlk-grid-gutter.q-col-gutter-md {
+    margin-left: calc(-1 * var(--wlk-grid-gutter-width));
+  }
+
+  .wlk-grid-gutter.row.q-col-gutter-md.q-mt-sm,
+  .wlk-grid-gutter.row.q-col-gutter-md {
+    margin-top: calc(-1 * var(--wlk-grid-gutter-width));
+  }
+}
+
+.q-card {
+  box-shadow: var(--wlk-box-shadow);
+  border-radius: var(--wlk-box-border-radius);
+}
+
+.q-btn.wlk-btn {
+  border-radius: var(--wlk-btn-border-radius);
+  font-size: var(--wlk-btn-font-size);
+  line-height: var(--wlk-btn-line-height);
+  font-family: var(--wlk-btn-font-family) !important;
+  font-weight: var(--wlk-btn-font-weight);
+}
+
+/* Start Page */
+.home-context {
+  background-color: #f6f6f6;
+}
+
+.home-context .ssp-start-page .ssp-start-header {
+  background: #fff;
+}
+.home-context .ssp-start-page .ssp-start-header .text-white {
+  color: #000 !important;
+}
+.home-context .ssp-start-page .ssp-start-header .header-content .start-title {
+  font-size: 24px !important;
+}
+.welcome-mobile .start-title.text-h5 span,
+.home-context
+  .ssp-start-page
+  .ssp-start-header
+  .header-content
+  .start-title
+  span {
+  font-family: var(--wlk-font-family-base) !important;
+}
+.home-context
+  .ssp-start-page
+  .ssp-start-header
+  .header-content
+  .header-description {
+  width: 100% !important;
+}
+.home-context .ssp-start-page .context-card.mobile-card,
+.mobile-context-menu .mobile-context-menu-section .context-card.mobile-card,
+.q-card.context-card .card-section-container .top {
+  background-color: unset !important;
+  background-image: url("/portal-seeconnect/resources/img/bg-allgemein.jpeg") !important;
+  background-size: cover;
+}
+.q-card.context-card .context-card-title {
+  color: #000;
+}
+
+.welcome-mobile {
+  display: block !important;
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-left: -16px;
+  border-top: 1px solid #000;
+  padding: 32px 24px 24px 24px;
+}
+.welcome-mobile .start-title.text-h5 {
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.mobile-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+.mobile-container .context-card.mobile-card {
+  margin: 0 !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-container .context-card.mobile-card .q-card__section {
+  padding: 0;
+}
+.mobile-container .context-card-title.text-h5 {
+  font-size: 1rem !important;
+  line-height: 1.5;
+}
+.mobile-container .context-card.mobile-card .context-card-description,
+.mobile-container .context-card.mobile-card .context-card-link {
+  display: none;
+}
+
+/* Teaser */
+.wlk-card.wlk-service-teaser {
+  box-shadow: var(--wlk-box-shadow) !important;
+  border-radius: var(--wlk-box-border-radius) !important;
+}
+
+#q-app.energy-context
+  .energy-layout
+  .wlk-card.wlk-service-teaser
+  .overlay-wrapper
+  .overlay
+  .overlay-content
+  .content-top
+  h4,
+#q-app.energy-context
+  .energy-layout
+  .wlk-card.wlk-service-teaser
+  .overlay-wrapper
+  .overlay
+  .overlay-content
+  p,
+#q-app.energy-context
+  .energy-layout
+  .wlk-card.wlk-service-teaser
+  .card-front
+  .card-image-wrapper
+  .card-image-container
+  i.text-white,
+#q-app.card-context
+  .card-layout
+  .wlk-card.wlk-service-teaser
+  .overlay-wrapper
+  .overlay
+  .overlay-content
+  .content-top
+  h4,
+#q-app.card-context
+  .card-layout
+  .wlk-card.wlk-service-teaser
+  .overlay-wrapper
+  .overlay
+  .overlay-content
+  p,
+#q-app.card-context
+  .card-layout
+  .wlk-card.wlk-service-teaser
+  .card-front
+  .card-image-wrapper
+  .card-image-container
+  i.text-white,
+#q-app.emobility-context
+  .emobility-layout
+  .wlk-card.wlk-service-teaser
+  .overlay-wrapper
+  .overlay
+  .overlay-content
+  .content-top
+  h4,
+#q-app.emobility-context
+  .emobility-layout
+  .wlk-card.wlk-service-teaser
+  .overlay-wrapper
+  .overlay
+  .overlay-content
+  p,
+#q-app.emobility-context
+  .emobility-layout
+  .wlk-card.wlk-service-teaser
+  .card-front
+  .card-image-wrapper
+  .card-image-container
+  i.text-white {
+  color: #ffffff !important;
+}
+
+#megaMenuBody {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/*Footer*/
+footer.bg-primary {
+  background: var(--q-color-secondary) !important;
+}
+
+/*Elements with BG images*/
+
+/* Home and Others */
+
+.q-header .navigation-bar,
+.home-context footer.q-footer {
+  background-image: url("/portal-seeconnect/resources/img/bg-allgemein.jpeg") !important;
+  background-position-x: 0 !important;
+  background-size: inherit !important;
+}
+
+.q-header .navigation-bar {
+  background-position-y: 0;
+}
+
+/* Energy Contexts */
+
+.energy-context-header .q-header .navigation-bar,
+.energy-context .wlk-card.wlk-service-teaser,
+.energy-context .wlk-link-service-teaser:hover .wlk-card.wlk-service-teaser,
+.energy-context .assign-customer-accounts .section-txt.bg-primary,
+.energy-context footer.q-footer {
+  background-image: url("/portal-seeconnect/resources/img/bg-energie.jpeg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Card & eMob Contexts */
+
+.card-context .card-layout .ssp-start-header,
+.card-context .card-layout .my-services,
+.card-context .card-layout .my-account,
+.emobility-context .emobility-layout .ssp-start-header,
+.emobility-context .emobility-layout .my-services,
+.emobility-context .emobility-layout .my-account {
+  background: none !important;
+  margin-bottom: auto !important;
+}
+.card-context .card-layout .ssp-start-header .page-title,
+.card-context .card-layout .my-services .page-title,
+.card-context .card-layout .my-account .page-title,
+.emobility-context .emobility-layout .ssp-start-header .page-title,
+.emobility-context .emobility-layout .my-services .page-title,
+.emobility-context .emobility-layout .my-account .page-title {
+  color: var(--q-primary) !important;
+  font-family: var(--wlk-font-family-headings) !important;
+}
+
+.card-context-header .q-header .navigation-bar,
+.card-context .card-layout .wlk-card.wlk-service-teaser,
+.card-context .wlk-link-service-teaser:hover .wlk-card.wlk-service-teaser,
+.card-context .assign-customer-accounts .section-txt.bg-primary,
+.card-context footer.q-footer,
+.emobility-context-header .q-header .navigation-bar,
+.emobility-context .emobility-layout .wlk-card.wlk-service-teaser,
+.emobility-context .wlk-link-service-teaser:hover .wlk-card.wlk-service-teaser,
+.emobility-context .assign-customer-accounts .section-txt.bg-primary,
+.emobility-context footer.q-footer {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border: none !important;
+}
+
+/* Card Context */
+.card-context-header .q-header .navigation-bar,
+.card-context .card-layout .wlk-card.wlk-service-teaser,
+.card-context .wlk-link-service-teaser:hover .wlk-card.wlk-service-teaser,
+.card-context .assign-customer-accounts .section-txt.bg-primary,
+.card-context footer.q-footer {
+  background-image: url("/portal-seeconnect/resources/img/bg-faehre.jpeg") !important;
+}
+
+/* Card Context */
+.emobility-context-header .q-header .navigation-bar,
+.emobility-context .emobility-layout .wlk-card.wlk-service-teaser,
+.emobility-context .wlk-link-service-teaser:hover .wlk-card.wlk-service-teaser,
+.emobility-context .assign-customer-accounts .section-txt.bg-primary,
+.emobility-context footer.q-footer {
+  background-image: url("/portal-seeconnect/resources/img/bg-mobilitaet.jpeg") !important;
+}
+
+/*Typo Overwrite - Bold*/
+
+#megaMenuBody .content-header,
+.q-header .navigation-bar .q-tab .q-tab__label,
+.home-context
+  .ssp-start-page
+  .context-card-item
+  .context-card-link
+  .q-btn
+  span.block {
+  font-family: var(--wlk-font-family-headings) !important;
+}
+/*Typo Overwrite - lineheight*/
+.q-avatar.userinfo-avatar .initials,
+.q-btn.wlk-btn .q-btn__content span {
+  margin-bottom: -4px;
+}
+
+/* Timeline Icons */
+.q-timeline__dot.text-primary {
+  color: transparent !important;
+}
+.q-timeline__dot .q-icon {
+  font-size: 38px;
+  color: var(--q-primary) !important;
+}
+.q-timeline__dot:after {
+  color: var(--q-primary) !important;
+}
+
+/* -----KonstanzCard BG ----- **/
+.q-card.contract-card {
+  background-image: url("/portal-seeconnect/resources/img/bg_konstanz_card.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-color: var(--q-primary) !important;
+}
+.q-card.contract-card .contract-card-icon {
+  display: none !important;
+}
+.q-card.contract-details-card
+  .contract-card.card-index
+  .content-end
+  .card-item {
+  border-bottom-left-radius: var(--wlk-box-border-radius);
+  border-bottom-right-radius: var(--wlk-box-border-radius);
+  font-family: var(--wlk-btn-font-family) !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(226, 0, 26, 0) 0%,
+    rgba(226, 0, 26, 0.7) 100%
+  );
+}
+
+.q-card.contract-details-card
+  .contract-card.card-index
+  .content-end
+  .card-item
+  .col
+  div:first-child {
+  text-shadow: 1px 1px 2px var(--q-primary), 0 0 1em var(--q-primary),
+    0 0 0.2em var(--q-primary);
+}

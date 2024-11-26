@@ -1,0 +1,83 @@
+.contactRequestMessage.q-textarea textarea {
+  min-height: 200px !important;
+}
+.mobile-change-account-menu .change-account-menu {
+  max-width: none !important;
+  width: 100%;
+}
+.mobile-change-account-menu .change-account-menu .q-card {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+#mobileContextNavigation:has(.context-navigation-btn) {
+  min-width: 2rem;
+}
+.base-layout .expansion-header,
+.base-layout .top-level-navigation-header {
+  min-height: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.base-layout .expansion-header .q-item__section--avatar,
+.base-layout .top-level-navigation-header .q-item__section--avatar {
+  min-width: unset;
+}
+.base-layout .expansion-items {
+  min-height: 40px;
+}
+.base-layout .drawer-contact-card {
+  margin: 0.75rem;
+}
+.base-layout .drawer-contact-card .q-item__section--avatar {
+  min-width: unset;
+}
+.base-layout .drawer-contact-card .q-item__section--avatar .q-icon {
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 4px;
+}
+.base-layout .drawer-contact-card .content-menu-contact {
+  font-size: 10pt;
+}
+.base-layout
+  .drawer-contact-card
+  .content-menu-contact
+  > .q-item:not(:first-child) {
+  min-height: 32px;
+}
+.base-layout .drawer-contact-card .content-menu-contact .q-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+.base-layout .drawer-contact-card .content-menu-contact .q-link .q-item__label,
+.base-layout .drawer-contact-card .content-menu-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+.base-layout
+  .drawer-contact-card
+  .content-menu-contact
+  .q-link
+  .q-item__label:hover,
+.base-layout .drawer-contact-card .content-menu-contact a:hover {
+  color: var(--q-primary);
+}
+.base-layout .q-page-container:not(.no-top-padding) {
+  padding-top: 75px;
+}
+.q-drawer {
+  height: calc(var(--vh) * 100 - 122px);
+  position: absolute !important;
+}
+.q-drawer .q-list {
+  padding-top: 0;
+}
+.q-drawer .mobile-drawer-scroll-area {
+  height: calc(var(--vh) * 100 - 262px - 1rem);
+}
+.q-drawer-container .fullscreen {
+  top: 122px;
+}
+.q-drawer__content {
+  background: linear-gradient(180deg, #fff, #f7f7f8) !important;
+}
